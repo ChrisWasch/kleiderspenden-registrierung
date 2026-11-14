@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <clipPath id="circle-clip">
+      <circle cx="300" cy="370" r="142"/>
+    </clipPath>
+  </defs>
+
+  <!-- Text: Vereinsname -->
+  <text x="300" y="138" text-anchor="middle" font-family="'Montserrat', 'Nunito', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="64" font-weight="800" fill="#18324b" letter-spacing="-0.5">Vereinsname</text>
+
+  <!-- Outer Ring -->
+  <circle cx="300" cy="370" r="150" fill="none" stroke="#4b6b94" stroke-width="15"/>
+
+  <!-- Group clipped inside the inner edge of the ring -->
+  <g clip-path="url(#circle-clip)">
+    <!-- T-Shirt -->
+    <path d="M 262 252
+             C 276 278, 324 278, 338 252
+             L 382 266
+             L 432 316
+             C 436 320, 436 326, 432 330
+             L 400 362
+             C 396 366, 390 366, 386 362
+             L 372 348
+             L 372 475
+             L 228 475
+             L 228 348
+             L 214 362
+             C 210 366, 204 366, 200 362
+             L 168 330
+             C 164 326, 164 320, 168 316
+             L 218 266
+             Z" fill="#3ab4b3"/>
+
+    <!-- White Outline around Heart -->
+    <path d="M 300 412
+             C 295 408, 248 375, 248 343
+             C 248 322, 265 308, 283 308
+             C 293 308, 298 313, 300 318
+             C 302 313, 307 308, 317 308
+             C 335 308, 352 322, 352 343
+             C 352 375, 305 408, 300 412 Z" fill="#ffffff"/>
+
+    <!-- Coral Red Heart -->
+    <path d="M 300 402
+             C 296 398, 256 370, 256 343
+             C 256 327, 268 316, 283 316
+             C 292 316, 297 321, 300 327
+             C 303 321, 308 316, 317 316
+             C 332 316, 344 327, 344 343
+             C 344 370, 304 398, 300 402 Z" fill="#ee6c5d"/>
+
+    <!-- White Separator Gap above Hand -->
+    <path d="M 145 375
+             C 162 418, 195 432, 224 418
+             C 246 407, 268 408, 290 415
+             C 308 421, 326 420, 336 410
+             C 344 402, 346 412, 338 424
+             C 326 441, 296 445, 272 440
+             C 294 452, 326 452, 354 432
+             C 374 418, 392 396, 405 384
+             C 414 376, 424 382, 417 394
+             C 402 420, 378 446, 354 462
+             C 368 456, 384 442, 402 418
+             C 412 405, 424 410, 416 424
+             C 394 460, 354 488, 304 494
+             C 242 502, 178 468, 152 405 Z" fill="#ffffff" stroke="#ffffff" stroke-width="14" stroke-linejoin="round"/>
+
+    <!-- Stylized Hand -->
+    <path d="M 148 375
+             C 164 418, 196 432, 225 418
+             C 247 407, 268 408, 289 415
+             C 307 421, 324 420, 333 411
+             C 340 404, 343 414, 335 425
+             C 323 441, 295 445, 270 439
+             C 292 452, 325 452, 353 432
+             C 373 418, 391 396, 404 384
+             C 412 377, 421 382, 415 393
+             C 400 419, 376 445, 352 461
+             C 366 455, 383 441, 401 418
+             C 410 406, 420 411, 413 424
+             C 391 460, 352 488, 302 494
+             C 240 502, 176 468, 150 405 Z" fill="#4b6b94"/>
+  </g>
+</svg>
