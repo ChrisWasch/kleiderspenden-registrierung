@@ -55,14 +55,103 @@
         <section id="registrierung">
             <h2>Deine Spende</h2>
 
-            <! Ergänzung des Formulars.>
+            <form id="spendenformular">
+
+            <fieldset class="mb-4">
+                <legend>Wie möchtest du die Kleidung übergeben?</legend>
+
+                <div class="form-check">
+                    <input
+                        class="form-check-input"
+                        type="radio"
+                        name="uebergabeart"
+                        id="geschaeftsstelle"
+                        value="geschaeftsstelle"
+                        checked
+                    >
+                    <label class="form-check-label" for="geschaeftsstelle">
+                        Übergabe an der Geschäftsstelle
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input
+                        class="form-check-input"
+                        type="radio"
+                        name="uebergabeart"
+                        id="abholung"
+                        value="abholung"
+                    >
+                    <label class="form-check-label" for="abholung">
+                        Abholung durch Sammelfahrzeug
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="mb-3">
+                <label for="kleidungsart" class="form-label">
+                    Art der Kleidung
+                </label>
+
+                <select class="form-select" name="kleidungsart"id="kleidungsart" required>
+                    <option value="">Bitte auswählen</option>
+                    <option value="Jacken">Jacken</option>
+                    <option value="Hosen">Hosen</option>
+                    <option value="Pullover">Pullover</option>
+                    <option value="Gemischte Kleidung">Gemischte Kleidung</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="krisengebiet" class="form-label">
+                    Krisengebiet
+                </label>
+
+                <select class="form-select" name="Krisengebiet" id="krisengebiet" required>
+                    <option value="">Bitte auswählen</option>
+                    <option value="Krisengebiet A">Krisengebiet A</option>
+                    <option value="Krisengebiet B">Krisengebiet B</option>
+                    <option value="Krisengebiet C">Krisengebiet C</option>
+                </select>
+            </div>
+
+            <fieldset id="adressbereich" hidden disabled>
+                <legend class="fs-5">Abholadresse</legend>
+
+                <div class="mb-3">
+                    <label for="strasse" class="form-label">Straße</label>
+                    <input type="text" class="form-control" name="strasse" id="strasse">
+                </div>
+
+                <div class="mb-3">
+                    <label for="hausnummer" class="form-label">Hausnummer</label>
+                    <input type="text" class="form-control" name="hausnummer" id="hausnummer">
+                </div>
+
+                <div class="mb-3">
+                    <label for="plz" class="form-label">Postleitzahl</label>
+                    <input type="text" class="form-control" name="plz" id="plz" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="ort" class="form-label">Ort</label>
+                    <input type="text" class="form-control" name="ort" id="ort">
+                </div>
+            </fieldset>
+
+            <p id="formularfehler" class="text-danger" role="alert"></p>
+
+            <button type="submit" class="btn btn-primary"> Registrierung abschließen </button>
+            </form>
+               
+
         </section>
     </main>
 
     <footer class="border-top">
         <div class="container d-flex flex-wrap gap-3 py-3">
             <span>Fiktiver Verein - Studienprojekt</span>
-            <a href="impressum.html">Rechtliche Hiniweise</a>
+            <a href="impressum.html">Rechtliche Hinweise</a>
             <a href="datenschutz.html">Datenschutzhinweise</a>
         </div>
     </footer>
